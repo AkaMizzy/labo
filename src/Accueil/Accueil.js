@@ -1,59 +1,37 @@
 import React from 'react';
 import { useEffect, useRef } from 'react';
-import "./Accueil.css";
+import '../assets/css/style.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-//-------------------------------images ---------------------------------------
-import logo from "../images/logoss (1).jpg";
-import event1 from "../images/evnt1.jpeg";
-import event2 from "../images/evnt2.jpeg";
-import event3 from "../images/evnt3.jpeg";
-import missonpic from "../images/missonpic.jpeg";
-import recherchepic from "../images/recherchepic.jpeg";
-import members from "../images/members.jpeg";
+import logo from "../assets/images/logoss (1).jpg";
+import event1 from "../assets/images/evnt1.jpeg";
+import event2 from "../assets/images/evnt2.jpeg";
+import event3 from "../assets/images/evnt3.jpeg";
+import missonpic from "../assets/images/missonpic.jpeg";
+import recherchepic from "../assets/images/recherchepic.jpeg";
+import members from "../assets/images/members.jpeg";
 
 function Accueil() {
-    const hamburgerRef = useRef(null);
-    const navLinksRef = useRef(null);
-    const navbarRef = useRef(null);
+
     const scrollToTopBtnRef = useRef(null);
 
-   
+
     useEffect(() => {
-        const hamburger = hamburgerRef.current;
-        const navLinks = navLinksRef.current;
-        const navbar = navbarRef.current;
+
         const scrollToTopBtn = scrollToTopBtnRef.current;
 
-  
+
         AOS.init();
 
-    
-        const handleResize = () => {
-            if (window.innerWidth <= 768) {
-                hamburger.style.display = 'flex'; 
-                navLinks.classList.remove('active'); 
-            } else {
-                hamburger.style.display = 'none'; 
-                navLinks.classList.remove('active'); 
-            }
-        };
 
-      
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
 
-       
-        const handleScroll = () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        };
 
-        
+
+
+
+
+
+
         const handleScrollToTopVisibility = () => {
             if (window.scrollY > 300) {
                 scrollToTopBtn.classList.add('show');
@@ -62,7 +40,7 @@ function Accueil() {
             }
         };
 
-       
+
         const handleScrollToTop = () => {
             window.scrollTo({
                 top: 0,
@@ -70,20 +48,18 @@ function Accueil() {
             });
         };
 
-  
-        window.addEventListener('resize', handleResize);
-        window.addEventListener('scroll', handleScroll);
-        window.addEventListener('scroll', handleScrollToTopVisibility);
+
+
+
         scrollToTopBtn.addEventListener('click', handleScrollToTop);
 
-     
-        handleResize();
+
+
 
         return () => {
-           
-            window.removeEventListener('resize', handleResize);
-            window.removeEventListener('scroll', handleScroll);
-            window.removeEventListener('scroll', handleScrollToTopVisibility);
+
+
+
             scrollToTopBtn.removeEventListener('click', handleScrollToTop);
         };
     }, []);
@@ -93,91 +69,6 @@ function Accueil() {
             <button id="scrollToTopBtn" className="scroll-to-top" ref={scrollToTopBtnRef}>
                 <i className='bx bx-chevron-up'></i>
             </button>
-
-            <header className="navbar" ref={navbarRef}>
-                <div className="logo">
-                    <img src={logo} alt="Logo" />
-                </div>
-                <button className="hamburger" ref={hamburgerRef}>
-                    <i className='bx bx-menu'></i>
-                </button>
-                <nav>
-                    <ul className="nav-links" ref={navLinksRef}>
-
-                        <li className="dropdown">
-                            <a href="#accueil">Accueil</a>
-                        </li>
-
-                        <li className="dropdown">
-                            <a href="#apropos">À propos du labo</a>
-                            <ul className="dropdown-menu">
-                                <li><a href="#mission">Presentation generale</a></li>
-                                <li><a href="#vision">L'organigramme </a></li>
-                                <li><a href="#equipe">Équipes de recherche</a></li>
-                                <li><a href="#historique">Annuaire des doctorants</a></li>
-                                <li><a href="#objectifs">Reglement interieur</a></li>
-                                <li><a href="#partenaires">Association</a></li>
-                            </ul>
-                        </li>
-
-                        <li className="dropdown">
-                            <a href="#production">Production scientifique</a>
-                            <ul className="dropdown-menu">
-                                <li><a href="#article1">Ouvrages</a></li>
-                                <li><a href="#article2">Publications indexes</a></li>
-                                <li><a href="#article3">Theses soutenues</a></li>
-                                <li><a href="#article4">Communications</a></li>
-                                <li><a href="#article5">Projets de recherche</a></li>
-                            </ul>
-                        </li>
-
-                        <li className="dropdown">
-                            <a href="#remac">REMAC</a>
-                        </li>
-
-                        <li className="dropdown">
-                            <a href="#evenements">Événements</a>
-                            <ul className="dropdown-menu">
-                                <li><a href="#event1">Journees scientifiques</a></li>
-                                <li><a href="#event2">Colloques</a></li>
-                                <li><a href="#event3">Conferences</a></li>
-                                <li><a href="#event4">Autres</a></li>
-                                <li><a href="#event5">Workshops & Formations</a></li>
-                                <li><a href="#event6">Tables rondes</a></li>
-                            </ul>
-                        </li>
-
-                        <li className="dropdown">
-                            <a href="#Presse">Espace presse</a>
-                            <ul className="dropdown-menu">
-                                <li><a href="#presse1">Presse 1</a></li>
-                                <li><a href="#presse2">Presse 2</a></li>
-                                <li><a href="#presse3">Presse 3</a></li>
-                            </ul>
-                        </li>
-
-                        <li className="dropdown">
-                            <a href="#partenariat">Partenariat</a>
-                            <ul className="dropdown-menu">
-                                <li><a href="partenariatNa.html">Echelle nationale</a></li>
-                                <li><a href="partenaireInter.html">Echelle internationale</a></li>
-                            </ul>
-                        </li>
-
-                        <li className="dropdown">
-                            <a href="#galerie">Galerie</a>
-                        </li>
-
-                        <li className="dropdown">
-                            <a href="contact.html">Contact</a>
-                        </li>
-
-                        <li className="dropdown">
-                            <a href="login.html">Se connecter</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
 
             <section className="home" id="accueil">
                 <div className="overlay">
@@ -378,50 +269,6 @@ function Accueil() {
                     </div>
                     <img src={members} alt="Membres" className="members-image" />
                 </div>
-            </section>
-
-
-            <section>
-                <footer className="footer" id="footer">
-                    <div className="footer-content">
-
-                        <div>
-                            <img src={logo} width="100px" height="100px" alt="Logo" />
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ratione distinctio! Iste nulla
-                                blanditiis dolores.
-                            </p>
-                            <div className="footer-social-icons">
-                                <a href="https://facebook.com" target="_blank">
-                                    <i className='bx bxl-facebook' aria-hidden="true"></i>
-                                </a>
-                                <a href="https://twitter.com" target="_blank">
-                                    <i className='bx bxl-twitter' aria-hidden="true"></i>
-                                </a>
-                                <a href="https://linkedin.com" target="_blank">
-                                    <i className='bx bxl-linkedin' aria-hidden="true"></i>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div className="footer-contact">
-                            <div className="contact-item">
-                                <i className='bx bx-map' aria-hidden="true"></i>
-                                <p>KM 7, Route d'El Jadida, Oasis - Casablanca</p>
-                            </div>
-                            <div className="contact-item">
-                                <i className='bx bx-phone' aria-hidden="true"></i>
-                                <p>+212 522 315 660</p>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <hr />
-                    <p className="footer-copyright">
-                        &copy; 2024 LAREMO. All rights reserved.
-                    </p>
-                </footer>
             </section>
 
         </body>
