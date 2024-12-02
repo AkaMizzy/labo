@@ -1,10 +1,14 @@
 import React from 'react';
 import { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../assets/css/style.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import logo from "../assets/images/logoss (1).jpg";
 import event1 from "../assets/images/evnt1.jpeg";
+import mem1 from "../assets/images/mem1.jpg";
+import mem2 from "../assets/images/mem2.jpg";
+import mem3 from "../assets/images/mem3.jpg";
 import event2 from "../assets/images/evnt2.jpeg";
 import event3 from "../assets/images/evnt3.jpeg";
 import missonpic from "../assets/images/missonpic.jpeg";
@@ -12,25 +16,13 @@ import recherchepic from "../assets/images/recherchepic.jpeg";
 import members from "../assets/images/members.jpeg";
 
 function Accueil() {
-
     const scrollToTopBtnRef = useRef(null);
-
+    const navigate = useNavigate();
 
     useEffect(() => {
-
         const scrollToTopBtn = scrollToTopBtnRef.current;
 
-
         AOS.init();
-
-
-
-
-
-
-
-
-
 
         const handleScrollToTopVisibility = () => {
             if (window.scrollY > 300) {
@@ -40,30 +32,26 @@ function Accueil() {
             }
         };
 
-
         const handleScrollToTop = () => {
             window.scrollTo({
                 top: 0,
-                behavior: 'smooth'
+                behavior: 'smooth',
             });
         };
 
-
-
-
         scrollToTopBtn.addEventListener('click', handleScrollToTop);
 
-
-
-
         return () => {
-
-
-
             scrollToTopBtn.removeEventListener('click', handleScrollToTop);
         };
     }, []);
 
+    const handleViewAllMembers = () => {
+        navigate('/membres'); // Cette fonction peut être utilisée n'importe où dans le composant
+    };
+
+    
+    
     return (
         <body>
             <button id="scrollToTopBtn" className="scroll-to-top" ref={scrollToTopBtnRef}>
@@ -75,41 +63,6 @@ function Accueil() {
                     <h1>Laboratoire d'Etudes Transversales en Droit, Economie et Management des Affaires</h1>
                 </div>
             </section>
-
-            {/* <section className="statistics" data-aos="fade-right" data-aos-duration="1000">
-        <div className="stat-item">
-            <h2 data-target="2">1000</h2>
-            <p>Équipes</p>
-        </div>
-        <div className="stat-item">
-            <h2 data-target="19">1000</h2>
-            <p>Enseignants</p>
-        </div>
-        <div className="stat-item">
-            <h2 data-target="6">1000</h2>
-            <p>Promotions</p>
-        </div>
-        <div className="stat-item">
-            <h2 data-target="32">1000</h2>
-            <p>Doctorants</p>
-        </div>
-        <div className="stat-item">
-            <h2 data-target="14">1000</h2>
-            <p>Manifestations scientifiques</p>
-        </div>
-        <div className="stat-item">
-            <h2 data-target="44">1000</h2>
-            <p>Publications</p>
-        </div>
-        <div className="stat-item">
-            <h2 data-target="69">1000</h2>
-            <p>Communications</p>
-        </div>
-        <div className="stat-item">
-            <h2 data-target="12">1000</h2>
-            <p>Soutenances</p>
-        </div>
-    </section> */}
 
             <section className="statistics" data-aos="fade-right" data-aos-duration="1000">
                 <div className="stat-item">
@@ -146,6 +99,41 @@ function Accueil() {
                 </div>
             </section>
 
+            <section className="team-members" id="membres" data-aos="fade-up" data-aos-duration="1000">
+  <h2 className="section-title">Nos Membres</h2>
+  <div className="team-container">
+    <div className="member-card">
+      <img src={mem1} alt="Ez-zouek Hamza" className="member-photo" />
+      <h3>Ez-zouek Hamza</h3>
+      <p className="member-role">Chef Exécutif</p>
+      <p className="member-description">
+        Hamza est le chef exécutif du restaurant, maîtrisant l'art de la cuisine marocaine traditionnelle.
+        Il crée des expériences culinaires inoubliables avec des plats authentiques et savoureux.
+      </p>
+    </div>
+    <div className="member-card">
+      <img src={mem2} alt="Sophie Berger" className="member-photo" />
+      <h3>Sophie Berger</h3>
+      <p className="member-role">Responsable des Relations Client</p>
+      <p className="member-description">
+        Sophie supervise les interactions avec les clients pour garantir un service exceptionnel et une
+        expérience mémorable pour tous nos invités.
+      </p>
+    </div>
+    <div className="member-card">
+      <img src={mem3} alt="Lucas Dupont" className="member-photo" />
+      <h3>Lucas Dupont</h3>
+      <p className="member-role">Responsable des Achats</p>
+      <p className="member-description">
+        Lucas est chargé de s'approvisionner en ingrédients frais et de qualité directement du Maroc,
+        assurant l'authenticité de nos plats.
+      </p>
+    </div>
+  </div>
+  <div className="view-all-members">
+  <button onClick={() => navigate("/members")}>Voir tous les membres</button>
+  </div>
+</section>
 
 
             <section className="events" id="evenements">

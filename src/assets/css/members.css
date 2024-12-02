@@ -1,0 +1,46 @@
+.members-page {
+    padding-top:100px;
+    margin: 20px;
+  }
+  
+  .members-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .member-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .member-photo {
+    width: 120px; /* Taille fixe pour les images */
+    height: 120px; /* Taille fixe pour les images */
+    border-radius: 50%; /* Rend les images circulaires */
+    object-fit: cover; /* Assure que l'image s'adapte bien au cercle */
+    margin: 0 auto 10px; /* Centre l'image et ajoute un espace en dessous */
+  }
+  
+  .member-role {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .member-description {
+    font-size: 12px;
+    color: #666; /* Couleur plus claire pour différencier la description */
+    margin-top: 5px;
+  }
+  
+  
+  .section-title {
+    color: rgb(1, 66, 244);
+    text-align: center; /* Centre le texte horizontalement */
+    margin: 20px 0; /* Facultatif, pour ajouter de l'espace autour */
+  }
+  

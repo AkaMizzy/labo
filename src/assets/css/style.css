@@ -782,3 +782,240 @@ body {
     background-color: #f2f2f2;
     color: #2d2d2d;
 }
+
+
+.team-members {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .member-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .member-photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .member-role {
+    font-weight: bold;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .member-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+
+  .view-all-members button {
+    background-color: #3498db; /* Couleur bleu clair */
+    color: white; /* Texte blanc */
+    font-size: 16px; /* Taille de la police */
+    padding: 10px 20px; /* Espacement interne */
+    margin-top: 20px;
+    border: none; /* Suppression de la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de pointeur au survol */
+    transition: background-color 0.3s ease; /* Animation douce au survol */
+    text-transform: uppercase; /* Texte en majuscules */
+  }
+  
+  .view-all-members button:hover {
+    background-color: #2980b9; /* Couleur plus foncée au survol */
+  }
+  
+
+/* Style global de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Conteneur principal */
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+  }
+  
+  /* Carte Google */
+  .map iframe {
+    width: 600px;
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  /* Informations de contact */
+  .contact-info {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .contact-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info .info-item i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  .contact-info .info-item a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Formulaire de contact */
+  .contact-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+  }
+  
+  .contact-form button {
+    padding: 12px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styles pour la section footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  footer .footer-content div {
+    flex: 1;
+  }
+  
+  footer .footer-copyright {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+  }
+  
+  #map {
+    width: 60%; /* Ajustez la largeur pour avoir une proportion adéquate */
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info {
+    width: 35%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
