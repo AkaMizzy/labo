@@ -17,13 +17,19 @@ import members from "../assets/images/members.jpeg";
 
 function Accueil() {
     const scrollToTopBtnRef = useRef(null);
+<<<<<<< HEAD
     const navigate = useNavigate();
+=======
+>>>>>>> ff1f91b506a66cd701b6957b096a64f9cfc1ef5c
 
     useEffect(() => {
         const scrollToTopBtn = scrollToTopBtnRef.current;
 
         AOS.init();
+<<<<<<< HEAD
 
+=======
+>>>>>>> ff1f91b506a66cd701b6957b096a64f9cfc1ef5c
         const handleScrollToTopVisibility = () => {
             if (window.scrollY > 300) {
                 scrollToTopBtn.classList.add('show');
@@ -42,6 +48,10 @@ function Accueil() {
         scrollToTopBtn.addEventListener('click', handleScrollToTop);
 
         return () => {
+<<<<<<< HEAD
+=======
+
+>>>>>>> ff1f91b506a66cd701b6957b096a64f9cfc1ef5c
             scrollToTopBtn.removeEventListener('click', handleScrollToTop);
         };
     }, []);
@@ -64,6 +74,10 @@ function Accueil() {
                 </div>
             </section>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ff1f91b506a66cd701b6957b096a64f9cfc1ef5c
             <section className="statistics" data-aos="fade-right" data-aos-duration="1000">
                 <div className="stat-item">
                     <h2 data-target="2">3</h2>
