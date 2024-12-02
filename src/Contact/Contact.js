@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
+<<<<<<< HEAD
+
+=======
 import "../assets/css/style.css";
+>>>>>>> ff1f91b506a66cd701b6957b096a64f9cfc1ef5c
 import "../assets/css/contact.css";
 
 export default function Contact() {
@@ -30,11 +34,20 @@ export default function Contact() {
         return () => {
             delete window.initMap;
             const existingScript = document.querySelector(
-                script[src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlLGdF9o-vorD4iIJByqW2FTbh3oJGCXU&callback=initMap"]
+<<<<<<< HEAD
+              'script[src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlLGdF9o-vorD4iIJByqW2FTbh3oJGCXU&callback=initMap"]'
+            );
+            if (existingScript) {
+              document.head.removeChild(existingScript);
+            }
+            
+=======
+                `script[src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlLGdF9o-vorD4iIJByqW2FTbh3oJGCXU&callback=initMap"]`
             );
             if (existingScript) {
                 document.head.removeChild(existingScript);
             }
+>>>>>>> ff1f91b506a66cd701b6957b096a64f9cfc1ef5c
         };
     }, []);
 
@@ -88,6 +101,11 @@ export default function Contact() {
                     </form>
                 </div>
             </section>
+<<<<<<< HEAD
+        </div>
+    );
+}
+=======
         </div>
     );
 }

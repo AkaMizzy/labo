@@ -116,28 +116,56 @@ export default function Header() {
             </ul>
           </li>
 
-          <li className="dropdown">
-            <a href="#production">Production scientifique</a>
-            <ul className="dropdown-menu">
-              <li>
-                <Link to="/ouvrages">Ouvrages</Link>
-              </li>
-              <li>
-                <Link to="/publication_indexés">Publications indexées</Link>
-              </li>
-              <li>
-                <Link to="/theses_soutenues">Thèses soutenues</Link>
-              </li>
-              <li>
-                <Link to="/communication">Communications</Link>
-              </li>
-              <li>
-                <Link to="/projets_recherche">Projets de recherche</Link>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  );
+                        <li className="dropdown">
+                            <a href="#production">Production scientifique</a>
+                            <ul className="dropdown-menu">
+                                <li><Link to="/ouvrages">Ouvrages</Link></li>
+                                <li><Link to="/publication_indexés">Publications indexes</Link></li>
+                                <li><Link to="/theses_soutenues">Theses soutenues</Link></li>
+                                <li><Link to="/communication">Communications</Link></li>
+                                <li><Link to="/projets_recherche">Projets de recherche</Link></li>
+                            </ul>
+                        </li>
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> ff1f91b506a66cd701b6957b096a64f9cfc1ef5c
+                        <li className="dropdown">
+                            <a href="#evenements">Événements</a>
+                            <ul className="dropdown-menu">
+                                <li><Link to="/journees_scientifique">Journees scientifiques</Link></li>
+                                <li><Link to="/colloques">Colloques</Link></li>
+                                <li><Link to="/conferences">Conferences</Link></li>
+                                <li><Link to="/autres">Autres</Link></li>
+                                <li><Link to="/workshops_formation">Workshops & Formations</Link></li>
+                                <li><Link to="/tables_rondes">Tables rondes</Link></li>
+                            </ul>
+                        </li>
+
+                        <li className="dropdown">
+                            <a href="#partenariat">Partenariat</a>
+                            <ul className="dropdown-menu">
+                                <li><Link to="/echelle_nationale">Echelle nationale</Link></li>
+                                <li><Link to="/echelle_internationale">Echelle internationale</Link></li>
+                            </ul>
+                        </li>
+
+                        <li className="dropdown">
+                            <Link to="/galerie">Galerie</Link>
+                        </li>
+
+                        <li className="dropdown">
+                            <Link to="/contact">Contact</Link>
+                        </li>
+
+                        <li className="dropdown">
+                            <Link to="/login">Se connecter</Link>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+           
+    )
 }
