@@ -116,10 +116,6 @@ export default function Header(){
                             </ul>
                         </li>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> ff1f91b506a66cd701b6957b096a64f9cfc1ef5c
                         <li className="dropdown">
                             <a href="#evenements">Événements</a>
                             <ul className="dropdown-menu">
