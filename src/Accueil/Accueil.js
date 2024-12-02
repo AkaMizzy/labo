@@ -15,23 +15,11 @@ function Accueil() {
 
     const scrollToTopBtnRef = useRef(null);
 
-
     useEffect(() => {
 
         const scrollToTopBtn = scrollToTopBtnRef.current;
 
-
         AOS.init();
-
-
-
-
-
-
-
-
-
-
         const handleScrollToTopVisibility = () => {
             if (window.scrollY > 300) {
                 scrollToTopBtn.classList.add('show');
@@ -40,7 +28,6 @@ function Accueil() {
             }
         };
 
-
         const handleScrollToTop = () => {
             window.scrollTo({
                 top: 0,
@@ -48,17 +35,9 @@ function Accueil() {
             });
         };
 
-
-
-
         scrollToTopBtn.addEventListener('click', handleScrollToTop);
 
-
-
-
         return () => {
-
-
 
             scrollToTopBtn.removeEventListener('click', handleScrollToTop);
         };
@@ -76,40 +55,6 @@ function Accueil() {
                 </div>
             </section>
 
-            {/* <section className="statistics" data-aos="fade-right" data-aos-duration="1000">
-        <div className="stat-item">
-            <h2 data-target="2">1000</h2>
-            <p>Équipes</p>
-        </div>
-        <div className="stat-item">
-            <h2 data-target="19">1000</h2>
-            <p>Enseignants</p>
-        </div>
-        <div className="stat-item">
-            <h2 data-target="6">1000</h2>
-            <p>Promotions</p>
-        </div>
-        <div className="stat-item">
-            <h2 data-target="32">1000</h2>
-            <p>Doctorants</p>
-        </div>
-        <div className="stat-item">
-            <h2 data-target="14">1000</h2>
-            <p>Manifestations scientifiques</p>
-        </div>
-        <div className="stat-item">
-            <h2 data-target="44">1000</h2>
-            <p>Publications</p>
-        </div>
-        <div className="stat-item">
-            <h2 data-target="69">1000</h2>
-            <p>Communications</p>
-        </div>
-        <div className="stat-item">
-            <h2 data-target="12">1000</h2>
-            <p>Soutenances</p>
-        </div>
-    </section> */}
 
             <section className="statistics" data-aos="fade-right" data-aos-duration="1000">
                 <div className="stat-item">

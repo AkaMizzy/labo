@@ -116,9 +116,6 @@ export default function Header(){
                             </ul>
                         </li>
 
-                        <li className="dropdown">
-                            <a href="#remac">REMAC</a>
-                        </li>
 
                         <li className="dropdown">
                             <a href="#evenements">Événements</a>
