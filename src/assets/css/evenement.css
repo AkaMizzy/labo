@@ -29,6 +29,13 @@
     object-fit: cover;
     margin: 0 auto 10px;
   }
+  .evenementdash-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin: 0 auto 10px;
+  }
   
   .evenement-content {
     flex: 1; /* Allow content to grow evenly */
