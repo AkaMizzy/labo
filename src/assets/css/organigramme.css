@@ -1,0 +1,19 @@
+.organigramme-container {
+    margin-top: 90px;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .organigramme-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .organigramme-image {
+    max-width: 80%;
+    height: auto;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+  }
+  

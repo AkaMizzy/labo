@@ -1,0 +1,63 @@
+.partenariat {
+    margin-top: 150px;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+.partenariat-title {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: darkblue;
+}
+
+/* Carousel parent container */
+.partenariat-carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    white-space: nowrap; /* Ensure all items are in one line */
+}
+
+/* Animation CSS pour un défilement fluide */
+.partenariat-carousel .inner-carousel {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+/* Les items du carousel */
+.partenaire-item {
+    flex: 0 0 auto;
+    text-align: center;
+    margin: 0 15px;
+}
+
+.partenaire-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc;
+}
+
+.partenaire-item p {
+    font-size: 0.9em;
+    color: black;
+    margin-top: 10px;
+}
+
+.partenaire-item:hover {
+    transform: scale(1.1);
+}
+
+/* Animation infinie */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

@@ -1,0 +1,93 @@
+.container {
+    margin: 70px;
+    padding: 30px;
+    border: 2px solid rgb(18, 101, 234); /* Ajoute une bordure bleue de 2px */
+    border-radius: 8px; /* Optionnel : ajoute des coins arrondis */
+   margin-top: 130px;
+    margin-bottom: 16px; /* Optionnel : espace entre les conteneurs */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : ajoute une ombre pour un meilleur effet visuel */
+}
+
+.containerAR {
+    
+    display: flex;
+    align-items: flex-start;
+    margin: 70px;
+    direction: rtl;
+
+    border: 2px solid rgb(18, 101, 234);
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.photo {
+    width: 170px;
+    height: 170px;
+    margin-right: 15px;
+
+}
+.photodlm {
+    width: 130px;
+    height: 130px;
+    margin-right: 15px;
+
+}
+.photozaka{
+    width: 190px;
+    height: 180px;
+    margin-right: 15px;
+
+}
+.photozakOv{
+    width: 150px;
+    height: 180px;
+    margin-right: 15px;
+
+}
+.photozakaC{
+    width: 170px;
+    height: 180px;
+    margin-right: 15px;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.nom {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.ouvrages {
+    list-style-type: none;
+  
+}
+.detailsAR {
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+}
+.photoAR {
+    width: 150px;
+    height: 150px;
+    direction: rtl;
+    
+    object-fit: cover;
+}
+
+.ouvragesAR {
+    list-style-type: none;
+    position: relative;
+    right: 20px;
+  
+}
+.nomAR {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    position: relative;
+    right: 20px;
+}

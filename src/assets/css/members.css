@@ -24,6 +24,13 @@
     object-fit: cover; /* Assure que l'image s'adapte bien au cercle */
     margin: 0 auto 10px; /* Centre l'image et ajoute un espace en dessous */
   }
+  .memberdash-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Rend les images circulaires */
+    object-fit: cover; /* Assure que l'image s'adapte bien au cercle */
+    margin: 0 auto 10px; /* Centre l'image et ajoute un espace en dessous */
+  }
   
   .member-role {
     font-size: 14px;
@@ -43,4 +50,78 @@
     text-align: center; /* Centre le texte horizontalement */
     margin: 20px 0; /* Facultatif, pour ajouter de l'espace autour */
   }
+  .members-table-container {
+    padding: 20px;
+  }
   
+  .members-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .members-table th, .members-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .members-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+
+  button {
+    margin: 1px 0;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+form input {
+    margin: 3px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pagination button.active {
+  background-color: #2e7d32; /* Darker green for active state */
+  font-weight: bold;
+}
+
+.pagination button:hover {
+  background-color: #45a049;
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+

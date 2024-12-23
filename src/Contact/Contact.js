@@ -1,10 +1,7 @@
 import React, { useEffect } from "react";
-<<<<<<< HEAD
 
-=======
-import "../assets/css/style.css";
->>>>>>> ff1f91b506a66cd701b6957b096a64f9cfc1ef5c
 import "../assets/css/contact.css";
+import "../assets/css/style.css";
 
 export default function Contact() {
     useEffect(() => {
@@ -34,20 +31,12 @@ export default function Contact() {
         return () => {
             delete window.initMap;
             const existingScript = document.querySelector(
-<<<<<<< HEAD
               'script[src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlLGdF9o-vorD4iIJByqW2FTbh3oJGCXU&callback=initMap"]'
             );
             if (existingScript) {
               document.head.removeChild(existingScript);
             }
             
-=======
-                `script[src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlLGdF9o-vorD4iIJByqW2FTbh3oJGCXU&callback=initMap"]`
-            );
-            if (existingScript) {
-                document.head.removeChild(existingScript);
-            }
->>>>>>> ff1f91b506a66cd701b6957b096a64f9cfc1ef5c
         };
     }, []);
 
@@ -80,6 +69,21 @@ export default function Contact() {
                             <a href="https://laremo.com">www.laremo.com</a>
                         </p>
                     </div>
+
+                    <div className="business-hours">
+                        <h3>Heures d'ouverture</h3>
+                        <ul>
+                            <li>
+                                <i className="bx bx-time"></i> Lundi - Vendredi : 9h à 17h
+                            </li>
+                            <li>
+                                <i className="bx bx-time"></i> Samedi : 9h à 14h
+                            </li>
+                            <li>
+                                <i className="bx bx-time"></i> Dimanche : Fermé
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div className="contact-form">
@@ -101,11 +105,6 @@ export default function Contact() {
                     </form>
                 </div>
             </section>
-<<<<<<< HEAD
-        </div>
-    );
-}
-=======
-        </div>
-    );
+       </div>
+);
 }

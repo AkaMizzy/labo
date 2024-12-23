@@ -97,3 +97,35 @@
     /* Texte noir */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+
+  .business-hours {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.business-hours h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.business-hours ul {
+    list-style: none;
+    padding: 0;
+}
+
+.business-hours ul li {
+    font-size: 1rem;
+    color: #555;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.business-hours ul li i {
+    margin-right: 8px;
+    color: #666;
+    font-size: 1.2rem;
+}

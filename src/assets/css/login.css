@@ -1,0 +1,417 @@
+:root {
+  --primary-color: #08b9fa;
+  --text-color: #000000;
+  --background-color: #f9f9f9;
+  --error-color: #ff4d4d;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.login-section {
+  position: relative;
+  background: url('../images/bghome.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.login-container {
+  max-width: 400px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333333;
+  font-weight: 500;
+
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+input:focus {
+  border: 1px solid var(--primary-color);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Navbar */
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgb(197, 193, 193);
+  color: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover; /* Empêche les distorsions d'image */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: red;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(135, 132, 132);
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  z-index: 200;
+}
+
+.dropdown-menu li {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a {
+  color: whitesmoke;
+  font-size: 12px;
+}
+
+.dropdown-menu a:hover {
+  color: red;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Home Section */
+.home {
+  position: relative;
+  height: 100vh;
+  background: url('../images/bghome.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.home .overlay {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.home h1 {
+  font-size: 28px;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Bouton hamburger */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+  z-index: 200;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+      display: block;
+      margin-left: auto;
+      background-color: azure;
+      border: 1px solid black;
+      border-radius: 10px;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      display: none;
+      position: absolute;
+      top: 70px;
+      right: 10px;
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 15px;
+      border-radius: 5px;
+      width: 200px;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .nav-links a {
+      color: white;
+      font-size: 14px;
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+      padding: 10px 20px;
+  }
+
+  .home h1 {
+      font-size: 20px;
+  }
+}
+
+/* Footer */
+.footer {
+  color: #d9d9d9;
+  background-color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 10vw;
+  margin-top: 150px;
+}
+
+.footer-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.footer-content > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px; /* Réduit l'espacement entre les éléments dans cette section */
+}
+
+.footer-social-icons a {
+  font-size: 2rem; /* Agrandit les icônes */
+  color: #f2f2f2;
+  transition: color 0.3s;
+}
+
+.footer-social-icons a:hover {
+  color: red; /* Ajout d'une interaction visuelle */
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column; /* Empile les éléments verticalement */
+  gap: 5px; /* Réduit l'espace entre les items de contact */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Réduction de l'espace entre l'icône et le texte */
+}
+
+.contact-item i {
+  font-size: 2rem; /* Augmente la taille des icônes pour correspondre aux besoins */
+  color: #f2f2f2;
+}
+
+.contact-item p {
+  font-size: 1rem; /* Maintient le texte lisible */
+  margin: 0; /* Élimine les marges supplémentaires */
+  line-height: 1.2; /* Ajuste l'espacement vertical */
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  color: #f2f2f2;
+}
+
+.contact-item p {
+  font-size: 0.9rem;
+  color: #f2f2f2;
+  margin: 10;
+  line-height: 1.4;
+}
+
+.footer hr {
+  width: 100%;
+  height: 1px;
+  margin: 20px 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  text-align: center;
+  color: #aaa;
+}
+
+.voiture-container {
+  width: 600px;
+  margin:  auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.remember-me-container {
+  display: flex;
+  align-items: center; /* Aligns the checkbox and text vertically */
+  justify-content: flex-start; /* Ensures they are left-aligned */
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #333333;
+  gap: 5px; /* Adds a consistent space between the checkbox and the text */
+}
+
+#remember-me {
+  margin: 0; /* Removes any default margin that could shift the position */
+  height: 14px; /* Ensures the checkbox matches the line height of the text */
+  width: 14px; /* Adjust width for a better proportion with the text */
+}
+
+
+.search-button {
+  background-color: #28b2cd; /* Green button color */
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.search-button:hover {
+  background-color: #165b88; /* Slightly darker green */
+}
+

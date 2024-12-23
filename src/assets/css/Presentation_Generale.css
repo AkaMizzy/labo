@@ -1,0 +1,76 @@
+.container-border {
+    border: 5px solid #036193; /* Bordure bleu */
+    padding: 40px; /* Espacement interne */
+    margin: 100px; /* Espacement externe */
+    border-radius: 10px; /* Coins arrondis */
+    background-color: #f9f9f9; /* Couleur de fond légère */
+  }
+  
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 2rem;
+    color: rgba(3, 65, 147, 0.934);
+    margin-bottom: 15px;
+  }
+  
+  .intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .research-axes-title {
+    color: rgba(3, 65, 147, 0.934);
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .research-axes-list {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .mission-title {
+    color: rgba(3, 65, 147, 0.934);
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .mission-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  .themes-title {
+    color: rgba(3, 65, 147, 0.934);
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .themes-list {
+    list-style-type: decimal;
+    margin-left: 20px;
+  }
+  
+  .keywords-title {
+    color: rgba(3, 65, 147, 0.934);
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .keywords-language {
+    color: rgba(200, 20, 3, 0.934);
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .keywords-list {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  

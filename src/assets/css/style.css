@@ -140,6 +140,7 @@ body {
 }
 
 .home .overlay {
+    margin-top: 90px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 15px;
@@ -205,9 +206,27 @@ body {
 
 .footer-content {
     width: 100%;
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: grid;
+    flex-direction: column;
+    align-items: start;
     gap: 40px;
+}
+
+.footer-contact h3{
+    color: #b10808;
+}
+
+.footer-address h3{
+    color: #b10808;
+}
+
+.footer-email h3{
+    color: #b10808;
+}
+
+.footer-location h3 {
+    color: #b10808;
 }
 
 .footer-content > div {
@@ -821,7 +840,7 @@ body {
   
   .member-role {
     font-weight: bold;
-    color: #555;
+    color: #0056b3;
     margin: 10px 0;
   }
   
@@ -835,7 +854,7 @@ body {
   .view-all-members button {
     background-color: #3498db; /* Couleur bleu clair */
     color: white; /* Texte blanc */
-    font-size: 16px; /* Taille de la police */
+    font-size: 20px; /* Taille de la police */
     padding: 10px 20px; /* Espacement interne */
     margin-top: 20px;
     border: none; /* Suppression de la bordure */
@@ -1019,3 +1038,31 @@ body {
     text-decoration: none;
   }
   
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-to-top i {
+    font-size: 24px;
+}
